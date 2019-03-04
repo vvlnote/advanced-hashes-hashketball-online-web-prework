@@ -292,7 +292,7 @@ def long_name_steals_a_ton?
   player_name = ""
   is_true = true
   
-  game_hasn.each do |location, team_data|
+  game_hash.each do |location, team_data|
     team_data[:players].each do |player|
       if biggest_steal < player[:stats][:steals]
         biggest_steal = player[:stats][:steals]
